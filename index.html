@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Portfolio</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Ahmat Firdaus</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Profile</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Ahmat Firdaus</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Profile</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+      <div class="section__pic-container">
+        <img src="./src/images/Ahmat_Firdaus.jpg" alt="Ahmat Firdaus Profile Picture">
+      </div>
+      <div class="section__text">
+        <!-- <p class="section__text__p1">Hello, I'm</p> -->
+        <h1 class="title">Ahmat Firdaus</h1>
+        <p class="section__text__p2">Electrical Engineer, Fullstack Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./CV.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="social-container">
+          <!-- <img src="./src/images/Ahmat_Firdaus.jpg" class="icon" alt="" onclick="location.href='https://linkedin.com'">
+          <img src="./src/images/Ahmat_Firdaus.jpg" class="icon" alt="" onclick="location.href='https://github.com'"> -->
+        </div>
+      </div>
+  </section>
+  <section id="about">
+    <!-- <p class="section__text__p1">Get To Know More</p> -->
+    <h1 class="title">My Profile</h1>
+    <div class="section-container">
+      <!-- <div class="section__pic-container">
+        <img src="./src/images/Ahmat_Firdaus.jpg" alt="profile picture" class="about-pic">
+      </div> -->
+      <div class="about-details-container">
+        <div class="text-container">
+          An electrical engineering freshgraduate with power system engineering major who enhanced his knowledge and skill, eager to apply it in industrial fields. Having some organization experience in college made him a team member who dedicating himself to achieve team success. 
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <div>
+              <i class="bi bi-person-circle"></i>
+            </div>
+            <h3>Biodata</h3>
+            <p>Name: Ahmat Firdaus</p>
+            <p>Age: 27 years old</p>
+            <p>Gender: Male</p>
+            <p>Nationality: Indonesia</p>
+          </div>
+          <div class="details-container">
+            <!-- <img src="./src/images/Ahmat_Firdaus.jpg" alt="experience icon" class="icon"> -->
+            <div>
+              <i class="bi bi-book"></i>
+            </div>
+            <h3>Education</h3>
+            <p>Bachelor's Degree, Electrical Engineering  (2015-2021)</p>
+            <p>Andalas University, Padang</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img src="./src/images/Ahmat_Firdaus.jpg" alt="arrow_icon" class="icon arrow" onclick="location.href='./#experience'"> -->
+  </section>
+  <section id="skills">
+    <!-- <p class="section__text__p1">Explore My</p> -->
+    <h1 class="title">My Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-container">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Software</h2>
+          <div class="article-container">
+            <article>
+              <div>
+                <i class="bi bi-bookmark-check"></i>
+              </div>
+              <div>
+                <h3>Microsoft Office</h3>
+              </div>
+            </article>
+            <article>
+              <div>
+                <i class="bi bi-bookmark-check"></i>
+              </div>
+              <div>
+                <h3>Matlab</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Web Development</h2>
+          <div class="article-container">
+            <article>
+              <div>
+                <i class="bi bi-bookmark-check"></i>
+              </div>
+              <div>
+                <h3>Programming language</h3>
+                <p>Javascript, PHP</p>
+              </div>
+            </article>
+            <article>
+              <div>
+                <i class="bi bi-bookmark-check"></i>
+              </div>
+              <div>
+                <h3>Frontend</h3>
+                <p>HTML, CSS, bootstrap, react</p>
+              </div>
+            </article>
+            <article>
+              <div>
+                <i class="bi bi-bookmark-check"></i>
+              </div>
+              <div>
+                <h3>Backend</h3>
+                <p>Nodejs, expressjs, Laravel</p>
+              </div>
+            </article>
+            <article>
+              <div>
+                <i class="bi bi-bookmark-check"></i>
+              </div>
+              <div>
+                <h3>Database</h3>
+                <p>MySQL, PostgreSQL, MongoDB</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img src="./src/images/Ahmat_Firdaus.jpg" alt="arrow_icon" class="icon arrow" onclick="location.href='./#experience'"> -->
+  </section>
+  <section id="projects">
+    <!-- <p class="section__text__p1">Browse My Recent</p> -->
+    <h1 class="title">My Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-container">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./src/images/default.png" class="project-img" alt="">
+          </div>
+          <h2 class="experience-sub-title project-title">Wedding Invitation</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">Live Demo</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./src/images/default.png" class="project-img" alt="">
+          </div>
+          <h2 class="experience-sub-title project-title">Ecommerce Website</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">Live Demo</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./src/images/default.png" class="project-img" alt="">
+          </div>
+          <h2 class="experience-sub-title project-title">Landing Page</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href=''">Live Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img src="./src/images/Ahmat_Firdaus.jpg" alt="arrow_icon" class="icon arrow" onclick="location.href='./#experience'"> -->
+  </section>
+  <section id="contact">
+    <h1 class="title">My Contact</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <!-- <img src="./src/images/Ahmat_Firdaus.jpg" alt="" class="icon contact-icon"> -->
+        <div>
+          <i class="bi bi-envelope"></i>
+        </div>
+        <p><a href="mailto:ahmatfirdaus.works@gmail.com">Email</a></p>
+      </div>
+      <div class="contact-info-container">
+        <!-- <img src="./src/images/Ahmat_Firdaus.jpg" alt="" class="icon contact-icon"> -->
+        <div>
+          <i class="bi bi-linkedin"></i>
+        </div>
+        <p><a href="https://www.linkedin.com/in/ahmatfirdaus/" target="_blank">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <!-- <img src="./src/images/Ahmat_Firdaus.jpg" alt="" class="icon contact-icon"> -->
+        <div>
+          <i class="bi bi-whatsapp"></i>
+        </div>
+        <p><a href="https://wa.me/6281277813618" target="_blank">Whatsapp</a></p>
+      </div>
+    </div>
+  </section>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E4A11B" fill-opacity="1" d="M0,160L40,181.3C80,203,160,245,240,218.7C320,192,400,96,480,85.3C560,75,640,149,720,154.7C800,160,880,96,960,96C1040,96,1120,160,1200,181.3C1280,203,1360,181,1400,170.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+  <footer>
+    <p>Copyright &#169; 2023</p>
+    <p>created by: Ahmat Firdaus</p>
+  </footer>
+  <script src="./src/script.js"></script>
+</body>
+</html>
